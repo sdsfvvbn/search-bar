@@ -84,8 +84,10 @@ hr {
 }
 
 img {
-  width: 70px;
-  height: 70px;
+  width: 10vw;
+  height: auto;
+  max-width: 70px;
+  min-width: 40px;
   border-radius: 50%;
 }
 
@@ -161,9 +163,10 @@ a {
 
 @media (max-width: 600px) {
   .header {
-    height: 100px;
-    gap: 0px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
   .search-form {
@@ -171,15 +174,15 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0;
-    width: 440px;
+    width: 300px;
     position: relative;
     max-width: 100%;
   }
 
   .title {
     display: flex;
-    margin: 8px auto;
-    font-size: 18px;
+    margin: 0;
+    font-size: 16px;
   }
 
   .search-result {
@@ -207,23 +210,9 @@ a {
     text-align: center;
   }
 
-  /* .filter {
-      display: none;
-    } */
-
   .button span {
     font-size: 24px;
   }
-
-  img {
-    display: none;
-  }
-
-  .icon {
-    display: none;
-    margin: 0;
-  }
-
   .more {
     width: 80%;
     margin: 20px auto;
